@@ -1,1 +1,1 @@
-# kellzhao.github.io
+R was used to filter 120 years of Olympic data to Gold Medal winners in Combat and Racket sports. Our analysis included comparing descriptive statistics of the height and weight of each sport and sex. Box plots and summary tables show that Combat sports vary far more in build than Racket sports, with Tennis weight showing the least variability overall.
