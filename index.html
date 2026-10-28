@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ==================================================================
+       EDIT #1 — PAGE TITLE
+       This is the text shown in the browser tab.
+       Replace "Your Name" with your actual name.
+       ================================================================== -->
+  <title>Kelly Zhao | CS & Data Portfolio</title>
+
+  <meta name="description" content="Personal machine learning portfolio." />
+
+  <!-- Fonts + stylesheet (you don't need to touch these) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ==================================================================
+       NAVIGATION BAR
+       EDIT #2 — Replace "Your Name" with your name.
+       The nav links point to sections further down the page — leave
+       those alone unless you add/remove sections.
+       ================================================================== -->
+  <header class="navbar">
+    <nav class="nav-inner">
+      <a href="#home" class="nav-logo">Kelly Zhao</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================================================================
+         HERO — the first thing visitors see
+         EDIT #3 — Change:
+           1. The status badge text (or delete the whole <p> if you prefer)
+           2. "Your Name" and the role line under it
+           3. The summary paragraph
+           4. The three quick stats at the bottom
+         ================================================================ -->
+    <section id="home" class="hero">
+      <p class="hero-badge"><span class="badge-dot"></span>Open to internships &amp; collaborations</p>
+
+      <h1 class="hero-title">Your Name</h1>
+
+      <p class="hero-role">Machine Learning Student</p>
+
+      <p class="hero-sub">
+        Write 2–3 sentences that summarize who you are and what you work on.
+        For example: "I'm a student focused on machine learning. I build and
+        evaluate models with Python and scikit-learn, and I care about writing
+        clear, reproducible code."
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">5+</span>
+          <span class="stat-label">Models Trained</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         ABOUT SECTION
+         EDIT #4 — Change:
+           1. The initials in the avatar circle ("YN")
+             (or replace the circle with a photo — see the comment)
+           2. The two paragraphs about yourself
+           3. The three "quick fact" boxes
+         ================================================================ -->
+    <section id="about" class="section">
+      <h2 class="section-title">About</h2>
+
+      <div class="about-grid">
+        <div class="about-photo">
+          <!-- OPTION A (default): initials avatar. Change "YN" to your initials. -->
+          <div class="avatar-circle">YN</div>
+
+          <!-- OPTION B: use a real photo instead.
+               1. Put your photo in the assets/ folder (e.g. assets/me.jpg)
+               2. Delete the avatar-circle div above
+               3. Un-comment the line below:
+          <img src="assets/me.jpg" alt="Photo of Your Name" class="avatar-photo" />
+          -->
+        </div>
+
+        <div class="about-text">
+          <p>
+            Replace this paragraph with your story. Where are you from? What
+            school do you go to? What made you interested in machine learning
+            in the first place?
+          </p>
+          <p>
+            Use this second paragraph for what you're working on now and where
+            you want to go. What have you built so far? What do you want to
+            study or become? What problems do you want to solve with ML?
+          </p>
+
+          <div class="quick-facts">
+            <div class="fact-card">
+              <span class="fact-label">Based in</span>
+              <span class="fact-value">Your City, ST</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">School</span>
+              <span class="fact-value">Your School</span>
+            </div>
+            <div class="fact-card">
+              <span class="fact-label">Focus Area</span>
+              <span class="fact-value">e.g. Computer Vision</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         SKILLS SECTION
+         EDIT #5 — Each <li> is one skill tag.
+         Add or delete <li> lines to match YOUR real skills.
+         It's okay to have short lists — honesty beats padding.
+         ================================================================ -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <ul class="chip-list">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Machine Learning &amp; Data</h3>
+          <ul class="chip-list">
+            <li>pandas</li>
+            <li>NumPy</li>
+            <li>scikit-learn</li>
+            <li>Matplotlib</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <ul class="chip-list">
+            <li>Jupyter Notebook</li>
+            <li>Google Colab</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Currently Learning</h3>
+          <ul class="chip-list">
+            <li>Neural Networks</li>
+            <li>TensorFlow</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         PROJECTS SECTION — the most important part of an ML portfolio!
+         EDIT #6 — There are 3 project cards below. For each one:
+           1. Change the title and description
+           2. Fill in the "model card" rows: Dataset / Model / Result
+           3. Update the tech tags
+           4. Point the link to your GitHub repo
+         To add a 4th project, copy an entire <article>...</article>
+         block and paste it below the last one.
+         To remove a project, delete its whole <article> block.
+         ================================================================ -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- ─────────────── PROJECT CARD 1 ─────────────── -->
+        <article class="project-card">
+          <h3 class="project-title">Project Title One</h3>
+          <p class="project-desc">
+            One or two sentences: what problem does this project solve, and what
+            did you do? Example: "Classified iris flowers by species using
+            measurements of their petals and sepals."
+          </p>
+
+          <div class="model-card">
+            <div class="model-row"><span class="model-key">Dataset</span><span class="model-val">e.g. Iris (150 samples)</span></div>
+            <div class="model-row"><span class="model-key">Model</span><span class="model-val">e.g. k-Nearest Neighbors</span></div>
+            <div class="model-row"><span class="model-key">Result</span><span class="model-val result">e.g. 96% accuracy</span></div>
+          </div>
+
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>pandas</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- ─────────────── PROJECT CARD 2 ─────────────── -->
+        <article class="project-card">
+          <h3 class="project-title">Project Title Two</h3>
+          <p class="project-desc">
+            Describe your second project here. Don't be shy about challenges you
+            hit — "the data was messy and I had to clean it" shows real skill.
+          </p>
+
+          <div class="model-card">
+            <div class="model-row"><span class="model-key">Dataset</span><span class="model-val">Where did the data come from?</span></div>
+            <div class="model-row"><span class="model-key">Model</span><span class="model-val">e.g. Linear Regression</span></div>
+            <div class="model-row"><span class="model-key">Result</span><span class="model-val result">e.g. R² = 0.87</span></div>
+          </div>
+
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- ─────────────── PROJECT CARD 3 ─────────────── -->
+        <article class="project-card">
+          <h3 class="project-title">Project Title Three</h3>
+          <p class="project-desc">
+            Your third project — maybe a team project? Explain your role if it
+            was a group effort.
+          </p>
+
+          <div class="model-card">
+            <div class="model-row"><span class="model-key">Dataset</span><span class="model-val">e.g. 10k movie reviews</span></div>
+            <div class="model-row"><span class="model-key">Model</span><span class="model-val">e.g. Naive Bayes</span></div>
+            <div class="model-row"><span class="model-key">Result</span><span class="model-val result">e.g. F1 score 0.84</span></div>
+          </div>
+
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>scikit-learn</li>
+            <li>NLP</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/your-username/your-repo" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================================================================
+         EXPERIENCE & EDUCATION SECTION
+         EDIT #7 — A simple timeline. Update the dates, titles, and
+         descriptions. Copy/paste a "timeline-item" div to add more steps.
+         ================================================================ -->
+    <section id="experience" class="section">
+      <h2 class="section-title">Experience &amp; Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-date">2026</span>
+          <h3>Machine Learning Program or Course</h3>
+          <p>
+            The program, bootcamp, or course where you learned ML fundamentals:
+            data cleaning, model training and evaluation, and responsible AI.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">20XX</span>
+          <h3>Add a milestone here</h3>
+          <p>
+            A class you took, a club you joined, a hackathon, a personal project —
+            anything that's part of your story.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">20XX – Present</span>
+          <h3>Your School Name</h3>
+          <p>
+            Your grade/year, favorite subjects, clubs or activities you're part of.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         CONTACT SECTION
+         EDIT #8 — Update:
+           1. The email address (appears TWICE: in href and in the text)
+           2. Your GitHub and LinkedIn URLs
+         Don't have LinkedIn yet? Just delete that <a> tag.
+         ================================================================ -->
+    <section id="contact" class="section contact-section">
+      <h2 class="section-title">Contact</h2>
+
+      <p class="contact-blurb">
+        The best way to reach me is by email. I'm happy to talk about projects,
+        machine learning, or opportunities to collaborate.
+      </p>
+
+      <a href="mailto:your.email@example.com" class="btn btn-primary contact-btn">
+        your.email@example.com
+      </a>
+
+      <div class="social-links">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+        <span class="social-sep">·</span>
+        <a href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================================================================
+       FOOTER
+       EDIT #9 — Put your name here. The year updates automatically.
+       ================================================================== -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
